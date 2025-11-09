@@ -3,5 +3,5 @@
 #include <algorithm>
 #include <stdexcept>
 
-template <typename T>
-typename	T::iterator	easyfind(T &containter, int value);
+template <typename Iterator>
+typename	Iterator::iterator	easyfind(Iterator &containter, int value);
