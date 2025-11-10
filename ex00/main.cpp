@@ -3,7 +3,6 @@
 #include <list>
 #include <deque>
 #include "easyfind.hpp"
-#include "easyfind.tpp"
 
 int main()
 {

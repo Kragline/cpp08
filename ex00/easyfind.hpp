@@ -5,3 +5,5 @@
 
 template <typename Iterator>
 typename	Iterator::iterator	easyfind(Iterator &containter, int value);
+
+#include "easyfind.tpp"
