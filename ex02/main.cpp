@@ -13,8 +13,9 @@ static void	regularTest(MutantStack<T> mStack)
 	--it;
 
 	*it = 99;
-	std::cout << "Element pointed by begin iterator was changed to 99" << std::endl;
+	std::cout << "Element pointed by begin iterator was changed to 99" << std::endl << std::endl;
 
+	std::cout << "Printing elements of the stack using custom iterators" << std::endl;
 	while (it != ite)
 	{
 		std::cout << *it << std::endl;
@@ -38,6 +39,7 @@ static void	constTest(MutantStack<T> mStack)
 	// Won't compile if comment is removed
 	// *cIt = 99;
 
+	std::cout << "Printing elements of the stack using custom const iterators" << std::endl;
 	while (cIt != cItE)
 	{
 		std::cout << *cIt << std::endl;
@@ -59,7 +61,9 @@ static void	reverseTest(MutantStack<T> mStack)
 	--rIt;
 
 	*rIt = 99;
-	std::cout << "Element pointed by reverse begin iterator was changed to 99" << std::endl;
+	std::cout << "Element pointed by reverse begin iterator was changed to 99" << std::endl << std::endl;
+
+	std::cout << "Printing elements of the stack using custom reverse iterators" << std::endl;
 
 	while (rIt != rItE)
 	{
@@ -84,6 +88,7 @@ static void	constReverseTest(MutantStack<T> mStack)
 	// Won't compile if comment is removed
 	// *cRevIt = 99;
 
+	std::cout << "Printing elements of the stack using custom const reverse iterators" << std::endl;
 	while (cRevIt != cRevItE)
 	{
 		std::cout << *cRevIt << std::endl;
